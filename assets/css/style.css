@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --green: rgb(25, 166, 86);
+    --yellow: rgb(246, 188, 0); 
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+nav .logo h1 {
+    color: #fff;
+    font-size: 40px;
+}
+
+nav .nav-links ul {
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+}
+nav .nav-links ul li{
+    margin: 0 20px;
+}
+nav .nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.hero-text {
+    margin-top: 150px;
+}
+
+.hero-text h1 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.hero-text h1>span {
+    color: var(--yellow);
+}
+
+.hero-text p {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 6px;
+    margin-bottom: 45px;
+}
+
+.btn {
+    padding: 10px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.btn-fill {
+    background-color: var(--yellow);
+    color: #000;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--yellow);
+}
+
+.hero-buttons a:nth-child(2) {
+    margin-left: 20px;
+}
+
+.section-padding {
+    padding: 30px 0;
+    background: rgb(199, 199, 199);
+}
+
+.single-food {
+    background: rgb(255, 255, 255);
+    max-width: 300px;
+    border-radius: 4px;
+    height: 400px;
+}
+
+.single-food .food-header {
+    display: flex;
+    justify-content: center;
+}
+
+.single-food img {
+    width: 300px;
+    height: auto;
+}
+
+.single-food .food-body,
+.single-food .food-footer {
+    padding: 20px;
+}
+
+.single-food .food-body p {
+    font-weight: 500;
+    color: var(--green);
+    margin-top: 15px;
+}
+
